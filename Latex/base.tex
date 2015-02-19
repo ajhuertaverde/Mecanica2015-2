@@ -1,0 +1,59 @@
+\documentclass[spanish]{article}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8x]{inputenc}
+
+\title{Hola Mundo}
+\author{Escribe aqu\'i tu nombre}
+
+\begin{document}
+% cuerpo del documento
+
+\maketitle
+
+Mi primer documento en \LaTeX{}.
+
+\begin{figure}[!htbp]
+\begingroup%
+\newcommand{\GNUPLOTspecial}{%
+  \@sanitize\catcode`\%=14\relax\special}%
+\setlength{\unitlength}{0.0500bp}%
+\begin{picture}(7200,5040)(0,0)%
+  \special{psfile=autofagia_apoptosis_Nd.ps llx=0 lly=0 urx=360 ury=252 rwi=3600}
+  \put(5936,4436){\makebox(0,0)[r]{\strut{}Apoptosis}}%
+  \put(5936,4636){\makebox(0,0)[r]{\strut{}Autofagia}}%
+  \put(3849,140){\makebox(0,0){\strut{}$P-value(10x)$}}%
+  \put(160,2719){%
+  \special{ps: gsave currentpoint currentpoint translate
+630 rotate neg exch neg exch translate}%
+  \makebox(0,0){\strut{}Network diameter}%
+  \special{ps: currentpoint grestore moveto}%
+  }%
+  \put(6839,440){\makebox(0,0){\strut{} 30}}%
+  \put(5843,440){\makebox(0,0){\strut{} 25}}%
+  \put(4846,440){\makebox(0,0){\strut{} 20}}%
+  \put(3850,440){\makebox(0,0){\strut{} 15}}%
+  \put(2853,440){\makebox(0,0){\strut{} 10}}%
+  \put(1857,440){\makebox(0,0){\strut{} 5}}%
+  \put(860,440){\makebox(0,0){\strut{} 0}}%
+  \put(740,4799){\makebox(0,0)[r]{\strut{} 18}}%
+  \put(740,4337){\makebox(0,0)[r]{\strut{} 16}}%
+  \put(740,3875){\makebox(0,0)[r]{\strut{} 14}}%
+  \put(740,3413){\makebox(0,0)[r]{\strut{} 12}}%
+  \put(740,2951){\makebox(0,0)[r]{\strut{} 10}}%
+  \put(740,2488){\makebox(0,0)[r]{\strut{} 8}}%
+  \put(740,2026){\makebox(0,0)[r]{\strut{} 6}}%
+  \put(740,1564){\makebox(0,0)[r]{\strut{} 4}}%
+  \put(740,1102){\makebox(0,0)[r]{\strut{} 2}}%
+  \put(740,640){\makebox(0,0)[r]{\strut{} 0}}%
+\end{picture}%
+\endgroup
+\caption{Network diameter}
+\end{figure}
+
+
+\end{document}
+

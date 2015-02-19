@@ -1,0 +1,33 @@
+% GNUPLOT: LaTeX picture with Postscript
+\begingroup%
+\makeatletter%
+\newcommand{\GNUPLOTspecial}{%
+  \@sanitize\catcode`\%=14\relax\special}%
+\setlength{\unitlength}{0.0500bp}%
+\begin{picture}(7200,5040)(0,0)%
+  \special{psfile=autofagia_Avg.ps llx=0 lly=0 urx=360 ury=252 rwi=3600}
+  \put(3849,140){\makebox(0,0){\strut{}P-value(1x10^x)}}%
+  \put(160,2719){%
+  \special{ps: gsave currentpoint currentpoint translate
+630 rotate neg exch neg exch translate}%
+  \makebox(0,0){\strut{}Avg.number of neigbors}%
+  \special{ps: currentpoint grestore moveto}%
+  }%
+  \put(6839,440){\makebox(0,0){\strut{} 30}}%
+  \put(5843,440){\makebox(0,0){\strut{} 25}}%
+  \put(4846,440){\makebox(0,0){\strut{} 20}}%
+  \put(3850,440){\makebox(0,0){\strut{} 15}}%
+  \put(2853,440){\makebox(0,0){\strut{} 10}}%
+  \put(1857,440){\makebox(0,0){\strut{} 5}}%
+  \put(860,440){\makebox(0,0){\strut{} 0}}%
+  \put(740,4799){\makebox(0,0)[r]{\strut{} 14}}%
+  \put(740,4205){\makebox(0,0)[r]{\strut{} 12}}%
+  \put(740,3611){\makebox(0,0)[r]{\strut{} 10}}%
+  \put(740,3017){\makebox(0,0)[r]{\strut{} 8}}%
+  \put(740,2422){\makebox(0,0)[r]{\strut{} 6}}%
+  \put(740,1828){\makebox(0,0)[r]{\strut{} 4}}%
+  \put(740,1234){\makebox(0,0)[r]{\strut{} 2}}%
+  \put(740,640){\makebox(0,0)[r]{\strut{} 0}}%
+\end{picture}%
+\endgroup
+\endinput
