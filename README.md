@@ -1,4 +1,4 @@
-# Mecanica2016-2
+# Laboratorio de Mecánica
 
 - Programas, Videos y Scripts para el Laboratorio de Mecánica
 
